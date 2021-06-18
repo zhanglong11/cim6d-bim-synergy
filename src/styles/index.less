@@ -1,0 +1,427 @@
+html {
+  height: 100%;
+}
+#app{
+  height:100%;
+  overflow: hidden;
+}
+body {
+  background-color: #030e20;
+  color: #b3dafe;
+  height: 100%;
+}
+a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.yellow {
+  color: #fcdd2f;
+}
+
+.el-table{
+  border-bottom: 1px #21405b solid;
+  td{
+    color: #ededed;
+    font-size: 14px;
+  }
+}
+.el-table:not(.transparent) {
+  color: #b3dafe;
+  font-size: 14px;
+  //background-color: rgba(5, 22, 42, 0.87);
+  .el-table__header-wrapper {
+    background-color: #213e5c;
+    thead {
+      color: #92f6ff;
+      th{
+        font-weight: normal;
+      }
+    }
+  }
+}
+.el-table--striped .el-table__body tr.el-table__row--striped td{
+  background: #0d1e35;
+}
+
+.el-table--border:after,
+.el-table--group:after,
+.el-table:before {
+  background-color: #030e1f;
+}
+.el-table th.is-leaf,
+.el-table td {
+  border: none;
+}
+
+.button {
+  background-color: #133861;
+  border: 1px solid #54c3cd;
+  color: white;
+  font-size: 12px;
+  padding: 2px 15px;
+}
+.tac {
+  text-align: center;
+}
+/*修改滚动条样式*/
+div,
+aside,ul{
+  &::-webkit-scrollbar{
+    width: 9px;
+    height: 9px;
+  }
+}
+div,aside,ul{
+  &::-webkit-scrollbar-track{
+    background: #0a1623;
+    box-shadow: 0 0 5px #386d98 inset;
+    border-radius: 10px;
+  }
+}
+div ,aside,ul{
+  &::-webkit-scrollbar-thumb {
+    background-image: url('~@/views/construction/images/roll-bg.png');
+    background-color: #5b93c1;
+    box-shadow: 0 0 5px rgba(59, 40, 40, 0.2) inset;
+    border-radius: 10px;
+  }
+}
+div,
+aside,ul {
+  &::-webkit-scrollbar-corner {
+    background: #0c1931;
+  }
+}
+
+.m-h {
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+.font20 {
+  font-size: 20px;
+}
+.trans {
+  transition: transform 0.2s ease;
+}
+.turn-down {
+  transform: translateY(91%);
+  transition: transform 0.4s ease;
+}
+// 底部table样式
+.bottom-table {
+  z-index: 1000;
+  position: fixed;
+  bottom: 0px;
+  right: 420px;
+  left: 320px;
+  padding: 10px;
+  background: #05172c;
+  padding: 8px 12px;
+  border-radius: 4px;
+  overflow-y: scroll;
+  height: 300px;
+  transition: transform 0.4s ease;
+  .up i {
+    .font20;
+    .trans;
+    transform: rotateZ(180deg);
+  }
+  .down i {
+    .font20;
+    .trans;
+  }
+
+}
+.clearfix:after {
+  /*伪元素是行内元素 正常浏览器清除浮动方法*/
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+// vxe-table样式修改
+.vxe-table--header {
+  background-color: rgba(5, 22, 42, 0.87);
+  color: #5ea0e9;
+}
+.vxe-table--header-wrapper {
+  border-top: none;
+}
+.vxe-table--body {
+  background-color: transparent;
+}
+
+.vxe-table {
+  background-color: transparent;
+  &:after,
+  &:before,
+  .vxe-table--repair {
+    border-color: #030e20 !important;
+  }
+  .vxe-header--column {
+    border-color: #030e20 !important;
+  }
+  background-color: transparent !important;
+  .vxe-table--body {
+    .vxe-body--row {
+      background-color: transparent;
+      color: #85add2;
+    }
+  }
+
+}
+.vxe-table.t--border.b--style-none .vxe-body--column {
+  background-image: unset !important;
+}
+// 右侧样式
+.aside-right {
+  width: 400px;
+  float: right;
+  .block {
+    margin-bottom: 20px;
+  }
+}
+.p-l-10 {
+  padding-left: 10px;
+}
+// 按钮全局样式修改
+.el-button--small {
+  // padding: 4px 6px !important;
+  &:focus {
+    color: #fff !important;
+    background-color: #124161 !important;
+  }
+}
+.el-button--text {
+  color: #017ab0 !important;
+}
+.el-button + .el-button {
+  margin-left: 6px !important;
+}
+.el-button.el-button--primary {
+  color: #fff;
+}
+// 全局时间组件
+.el-range-input {
+  background-color: inherit;
+}
+.el-range-separator {
+  color: #c0c4cc !important;
+}
+.el-picker-panel__body {
+  background: #05172c;
+}
+.highcharts-credits {
+  display: none !important;
+}
+// radio样式
+.el-radio-button__inner {
+  color: #fff;
+}
+.el-radio-button__orig-radio:checked + .el-radio-button__inner {
+  color: #fff !important;
+}
+.gantt_grid_scale,
+.gantt_task_scale,
+.gantt_task_vscroll {
+  background-color: #0b253d !important;
+}
+.gantt_row.odd,
+.gantt_task_row.odd,
+.gantt_row,
+.gantt_task_row {
+  background-color: #0b253d !important;
+}
+
+// select全局样式
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+  background-color: #05172c;
+}
+.el-scrollbar__view .el-select-dropdown__list {
+  background-color: #05172c !important;
+}
+.el-select-dropdown__wrap {
+  background: #05172c !important;
+}
+.goDetails {
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  border: 1px solid #053858;
+  color: #23a8eb;
+  background-color: #092138;
+  margin-right: 5px;
+}
+//日期按钮颜色修改
+.el-picker-panel__icon-btn {
+  color: #fff;
+}
+/*
+   任务名称：task#2885 【智慧施工2.0-前端】首页切图及功能开发
+   开发人员：耿为刚
+   日期：2020-04-07
+   任务类型：全新代码
+ */
+@import url('./common.less');
+@keyframes title-line {
+  0% {
+    width: 4px;
+    margin-left: 0;
+    opacity: 0;
+  }
+  50% {
+    margin-left: 150px;
+    width: 16px;
+    opacity: 1;
+  }
+  70% {
+    margin-left: 800px;
+    width: 4px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 800px;
+    width: 4px;
+    opacity: 0;
+  }
+}
+.main-title{
+  background: url('../views/construction/images/title-bg.png') no-repeat;
+  position: relative;
+  padding-left: 40px;
+  height: 40px;
+  display: flex;
+  overflow: hidden;
+  &.no-line{
+    background-image: url('../views/construction/images/title-bg-noline.png');
+    &:before, &:after{
+      display: none;
+    }
+  }
+  &:before,&:after{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 2px;
+    background: @main-color;
+    left: 6px;
+    bottom: 7px;
+    animation: title-line 4s infinite linear;
+  }
+  &:after{
+    left: 250px;
+    animation: title-line 3s infinite linear;
+  }
+  .name{
+    font-size: 18px;
+    color: #fff;
+    line-height: 1;
+    transition: all 0.4s;
+    i{
+      margin-right: 10px;
+      font-size: 12px;
+      font-style: normal;
+    }
+  }
+  .sub{
+    margin-left: 6px;
+    padding-top: 6px;
+    font-size: 12px;
+    color: @sub-color;
+    line-height: 1;
+  }
+  .tabs{
+    .name{
+      font-size: 16px;
+      margin-right: 12px;
+      color: #999;
+      cursor: pointer;
+      &.active{
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+  }
+}
+.main-title3{
+  background: url('../views/construction/images/title3-bg.png') center no-repeat;
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 16px;
+  color: #fff;
+  .name{
+    display: flex;
+    align-items: flex-end;
+    line-height: 1;
+  }
+}
+
+.main-title2{
+  background: url('../views/construction/images/title2-bg.png') left bottom no-repeat;
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  font-size: 16px;
+  color: #fff;
+  .name{
+    display: flex;
+    align-items: flex-end;
+    line-height: 1;
+    &:after{
+      margin-left: 2px;
+      content: '';
+      background: url('../views/construction/images/title2-bg-line.png') bottom no-repeat;
+      width: 53px;
+      height: 8px;
+    }
+  }
+}
+.content-wrap{
+  box-sizing: border-box;
+}
+.el-tooltip__popper.is-dark{
+  color: #fff;
+}
+.el-table__empty-block{
+  padding: 8px 0;
+  min-height: auto;
+  .el-table__empty-text{
+    line-height: 23px;
+  }
+}
+
+.el-dialog {
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+.el-dialog__header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px 16px 0 0;
+}
+.el-dialog__title {
+  color: #fff;
+}
+
+//修复vxe-table与vxe-grid样式差距过大问题
+.vxe-table--body-wrapper {
+  background: transparent !important;
+}
+.vxe-body--column, .vxe-header--column {
+  background-image: none !important;
+}
+.vxe-table--header-border-line, .vxe-table--border-line {
+  border: 0 !important;
+}

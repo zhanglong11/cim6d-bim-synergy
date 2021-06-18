@@ -1,0 +1,214 @@
+html {
+  height: 100%;
+}
+#app {
+  height: 100%;
+}
+body {
+  background-color: #030e20;
+  color: #b3dafe;
+  height: 100%;
+}
+a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.yellow {
+  color: #fcdd2f;
+}
+.el-table:not(.transparent) {
+  color: #b3dafe;
+  font-size: 14px;
+  background-color: rgba(5, 22, 42, 0.87);
+}
+.el-table:not(.transparent) .el-table__header-wrapper {
+  background-color: #081e40;
+}
+.el-table:not(.transparent) .el-table__header-wrapper thead {
+  color: #5ea0e9;
+}
+.el-table--border:after,
+.el-table--group:after,
+.el-table:before {
+  background-color: #030e1f;
+}
+.el-table th.is-leaf,
+.el-table td {
+  border: none;
+}
+.button {
+  background-color: #133861;
+  border: 1px solid #54c3cd;
+  color: white;
+  font-size: 12px;
+  padding: 2px 15px;
+}
+.tac {
+  text-align: center;
+}
+/*修改滚动条样式*/
+div::-webkit-scrollbar,
+aside::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+div::-webkit-scrollbar-track,
+aside::-webkit-scrollbar-track {
+  background: #0C1931;
+  border-radius: 2px;
+}
+div::-webkit-scrollbar-thumb,
+aside::-webkit-scrollbar-thumb {
+  background: #22436B;
+  border-radius: 2px;
+}
+div::-webkit-scrollbar-corner,
+aside::-webkit-scrollbar-corner {
+  background: #0C1931;
+}
+.m-h {
+  max-height: calc(100vh - 100px);
+  overflow-y: scroll;
+}
+.font20 {
+  font-size: 20px;
+}
+.trans {
+  transition: transform 0.2s ease;
+}
+.turn-down {
+  transform: translateY(91%);
+  transition: transform 0.4s ease;
+}
+.bottom-table {
+  z-index: 1000;
+  position: fixed;
+  bottom: 0px;
+  right: 420px;
+  left: 320px;
+  padding: 10px;
+  background: #05172C;
+  padding: 8px 12px;
+  border-radius: 4px;
+  overflow-y: scroll;
+  height: 300px;
+  transition: transform 0.4s ease;
+}
+.bottom-table .up i {
+  font-size: 20px;
+  transition: transform 0.2s ease;
+  transform: rotateZ(180deg);
+}
+.bottom-table .down i {
+  font-size: 20px;
+  transition: transform 0.2s ease;
+}
+.clearfix:after {
+  /*伪元素是行内元素 正常浏览器清除浮动方法*/
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.vxe-table--header {
+  background-color: rgba(5, 22, 42, 0.87);
+  color: #5ea0e9;
+}
+.vxe-table--header-wrapper {
+  border-top: none;
+}
+.vxe-table--body {
+  background-color: transparent;
+}
+.vxe-table {
+  background-color: transparent;
+  background-color: transparent !important;
+}
+.vxe-table:after,
+.vxe-table:before,
+.vxe-table .vxe-table--repair {
+  border-color: #030e20 !important;
+}
+.vxe-table .vxe-header--column {
+  border-color: #030e20 !important;
+}
+.vxe-table .vxe-table--body .vxe-body--row {
+  background-color: transparent;
+  color: #85add2;
+}
+.vxe-table.t--border.b--style-none .vxe-body--column {
+  background-image: unset !important;
+}
+.aside-right {
+  width: 400px;
+  float: right;
+}
+.aside-right .block {
+  margin-bottom: 20px;
+}
+.p-l-10 {
+  padding-left: 10px;
+}
+.el-button--small:focus {
+  color: #fff !important;
+  background-color: #124161 !important;
+}
+.el-button--text {
+  color: #017AB0 !important;
+}
+.el-button + .el-button {
+  margin-left: 6px !important;
+}
+.el-button.el-button--primary {
+  color: #fff;
+}
+.el-range-input {
+  background-color: inherit;
+}
+.el-range-separator {
+  color: #C0C4CC !important;
+}
+.el-picker-panel__body {
+  background: #05172C;
+}
+.highcharts-credits {
+  display: none !important;
+}
+.el-radio-button__inner {
+  color: #fff;
+}
+.el-radio-button__orig-radio:checked + .el-radio-button__inner {
+  color: #fff !important;
+}
+.gantt_grid_scale,
+.gantt_task_scale,
+.gantt_task_vscroll {
+  background-color: #0B253D !important;
+}
+.gantt_row.odd,
+.gantt_task_row.odd,
+.gantt_row,
+.gantt_task_row {
+  background-color: #0B253D !important;
+}
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+  background-color: #05172c;
+}
+.el-scrollbar__view .el-select-dropdown__list {
+  background-color: #05172c !important;
+}
+.el-select-dropdown__wrap {
+  background: #05172C !important;
+}
+.goDetails {
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  border: 1px solid #053858;
+  color: #23a8eb;
+  background-color: #092138;
+  margin-right: 5px;
+}

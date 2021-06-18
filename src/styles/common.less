@@ -1,0 +1,134 @@
+/*
+   任务名称：task#2885 【智慧施工2.0-前端】首页切图及功能开发
+   开发人员：耿为刚
+   日期：2020-04-07
+   任务类型：全新代码
+ */
+ @main-color: #13d6ff;
+ @base-color: #22436b;
+ @sub-color: #567fa9;
+ @primary-color: #2568b3;
+ @warning-color: #f1d82f;
+ @defaultWidth: 1920px;
+ @line: #5e5e5e;
+
+ .base-wrap{
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+ } 
+ .layout-main{
+   transform-origin: center 0;
+   transition: all 0.4s;
+   min-height: 100%;
+   width: @defaultWidth;
+   margin: 0 auto;
+   position: absolute;
+   left: 50%;
+   margin-left: -960px;
+   overflow: hidden;
+ }
+ 
+ // 渐隐动画
+ @keyframes fadeAnimation {
+  0% {    
+    opacity: 0.5;
+  }
+  20% {    
+    opacity: 1;
+  }
+  80% {    
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+ // 放大
+ @keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(1.2);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+ // 顺时针旋转动画并放大
+ @keyframes rotateScaleAnimation {
+  0% {
+    opacity:1;
+  }
+  20% {
+    transform: rotate(360deg) scale(1.1);
+    opacity: 0.3;
+  }
+  25% {
+    transform: rotate(360deg) scale(1);
+    opacity:1;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity:1;
+  }
+}
+ // 顺时针旋转动画
+ @keyframes rotateAnimation {
+  0% {
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+// 逆时针旋转动画
+@keyframes rotateReversalAnimation {
+  0% {
+  }
+  50% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+// 从上到下移动
+@keyframes moveDownAnimation {
+  0% {
+  }
+  50% {
+    margin-top: 150px;
+  }
+  100% {
+    margin-top: 300px;
+  }
+}
+
+// 从左到右移动
+@keyframes moveLeftAnimation {
+  0% {
+    background-position: 0;
+  }
+  50% {    
+    background-position: 300;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+.clear{
+  content: '';
+  clear: both;
+  display: table;
+}

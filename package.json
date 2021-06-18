@@ -1,0 +1,69 @@
+{
+  "name": "bim-visual-collaboration",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --mode prod",
+    "sit": "vue-cli-service build --mode sit",
+    "prod": "vue-cli-service build --mode prod",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "core-js": "^3.6.4",
+    "dhtmlx-gantt": "^6.3.5",
+    "echarts": "^4.6.0",
+    "echarts-gl": "^1.1.1",
+    "element-ui": "^2.13.0",
+    "filesize": "^6.1.0",
+    "highcharts": "^8.0.0",
+    "highcharts-vue": "^1.3.5",
+    "jquery": "^3.4.1",
+    "js-cookie": "^2.2.1",
+    "jsencrypt": "^3.0.0-rc.1",
+    "lodash": "^4.17.15",
+    "minireset.css": "^0.0.6",
+    "moment": "^2.24.0",
+    "nprogress": "^0.2.0",
+    "slick-carousel": "^1.8.1",
+    "v-charts": "^1.19.0",
+    "vue": "^2.6.11",
+    "vue-baidu-map": "^0.21.22",
+    "vue-echarts": "^5.0.0-beta.0",
+    "vue-fullscreen": "^2.1.6",
+    "vue-router": "^3.1.5",
+    "vue-slick": "^1.1.15",
+    "vuex": "^3.1.2",
+    "vxe-table": "^2.9.13",
+    "vxe-table-plugin-element": "^1.7.2",
+    "xe-utils": "^2.6.5"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.2.0",
+    "@vue/cli-plugin-eslint": "~4.2.0",
+    "@vue/cli-plugin-router": "~4.2.0",
+    "@vue/cli-plugin-vuex": "~4.2.0",
+    "@vue/cli-service": "~4.2.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^6.1.2",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "sass": "^1.25.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "git add"
+    ]
+  }
+}
